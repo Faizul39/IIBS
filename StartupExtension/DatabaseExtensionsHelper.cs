@@ -1,4 +1,6 @@
-﻿using IIBS.DbContext;
+﻿
+using IIBS.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace IIBS.StartupExtension
@@ -10,7 +12,10 @@ namespace IIBS.StartupExtension
             services.AddDbContext<ApplicationDbContext>(Opt =>
             {
                 Opt.UseSqlServer(configuration.GetConnectionString(name:"DefaultConnection"));
+
             });
+
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 
             return services;
         }
