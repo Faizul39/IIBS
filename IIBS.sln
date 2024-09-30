@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIBS", "IIBS.csproj", "{92F0EE34-F98F-4D2C-A8BD-B856B51DD450}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92F0EE34-F98F-4D2C-A8BD-B856B51DD450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F0EE34-F98F-4D2C-A8BD-B856B51DD450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F0EE34-F98F-4D2C-A8BD-B856B51DD450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F0EE34-F98F-4D2C-A8BD-B856B51DD450}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3328AD3B-80F0-492A-88A5-9809B3D8B540}
+	EndGlobalSection
+EndGlobal
