@@ -51,6 +51,22 @@ namespace IIBS.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "employees",
+                columns: table => new
+                {
+                    EmployeeID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    First_Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Last_Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Division = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Title_and_Room = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_employees", x => x.EmployeeID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -213,6 +229,9 @@ namespace IIBS.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "employees");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
