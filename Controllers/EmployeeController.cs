@@ -16,8 +16,8 @@ namespace IIBS.Controllers
 
         public EmployeeController(ApplicationDbContext context, IEmployee employee)
         {
-            this._context = context;
-            this._employee = employee;
+            _context = context;
+            _employee = employee;
         }
 
         public IActionResult Index()
@@ -61,8 +61,8 @@ namespace IIBS.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            var employee = _employee.GetEmployeeByID(id);
-            return View(employee);
+            var empl = _employee.GetEmployeeByID(id);
+            return View(empl);
         }
 
         [HttpPost]

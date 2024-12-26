@@ -9,16 +9,16 @@
 <body2>
     <div class="container">
         <header>Employee Information</header>
-        <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
             <div class="form first">
-                <div class="details Protein">
+                <div class="details">
                     <div class="fields">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        <input type="hidden" asp-for="EmployeeID" />
                         <div class="input-field">
                             <label asp-for="EmployeeID">Employee ID</label>
-                            <input asp-for="EmployeeID" type="number" onchange="setTwoNumberDecimal" min="0" max="1000" placeholder="Enter Employee ID" />
+                            <input asp-for="EmployeeID" type="number" placeholder="Enter Employee ID" />
                         </div>
+                        <span asp-validation-for="EmployeeID" class="text-danger"></span>
                         <div class="input-field">
                             <label asp-for="First_Name">First Name</label>
                             <input asp-for="First_Name" type="text" placeholder="Enter First Name" />

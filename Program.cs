@@ -10,7 +10,8 @@ using IIBS.Repository;
 var builder = WebApplication.CreateBuilder(args);
 
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
-
+//var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
+//optionsBuilder.UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()));
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();

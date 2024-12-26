@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace IIBS.Repository
-{
-   
+{ 
     public class EmployeeRepository : IEmployee
     {
         private readonly ApplicationDbContext _context;
@@ -21,12 +20,12 @@ namespace IIBS.Repository
         }
         public Employee GetEmployeeByID(int id)
         {
-            Employee? emp = _context.employees.FirstOrDefault(e => e.EmployeeID == id);
+            Employee emp = _context.employees.FirstOrDefault(e => e.EmployeeID == id);
             return emp;
         }
         public Employee Details(int id)
         {
-            Employee? emp = _context.employees.FirstOrDefault(e => e.EmployeeID == id);
+            Employee emp = _context.employees.FirstOrDefault(e => e.EmployeeID == id);
             return emp;
         }
         public Employee AddEmployee(Employee emp)
@@ -43,8 +42,7 @@ namespace IIBS.Repository
             emp.Last_Name = uemp.Last_Name;
             emp.Division = uemp.Division;
             emp.Title_and_Room = uemp.Title_and_Room;
-            _context.employees.Update(emp);
-            _context.SaveChanges(true);
+            _context.SaveChanges();
             return uemp;
         }
         public void DeleteEmployee(int id)
