@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IIBS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80579e8773bd8f17d741e56f95a52a76dbe12095")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da1e26e393aebf44d7fd64ee84e51a6ebb5f10de")]
 [assembly: System.Reflection.AssemblyProductAttribute("IIBS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IIBS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
